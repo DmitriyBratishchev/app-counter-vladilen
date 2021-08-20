@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
-  // const [disabled, setDisabled] = useState(false);
 
   const formCount = () => {
     return count === 0 ? "Ноль" : count;
@@ -20,14 +19,7 @@ const Counter = () => {
 
   const handelDecrement = () => {
     setCount(count - 1);
-    // isDisabled();
   };
-
-  // const isDisabled = () => {
-  //   if (count < 1) {
-  //     setDisabled(true);
-  //   }
-  // };
 
   return (
     <div>
